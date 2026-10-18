@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navegacao">
+        <nav>
+            <ul style="list-style-type:none;">
+                <li><img src="../images/logo-vidracaria-boa-nova.webp" alt="Logotipo da Vidraçaria Boa Nova" width="100" height="50"></li>
+                <li><a href="../index.html" class="link-paginas">Página Inicial</a></li>
+                <li><a href="sobre.html" class="link-paginas">Sobre</a></li>
+                <li><a href="servicos.html" class="link-paginas">Serviços</a></li>
+                <li><a href="contato.html" class="link-paginas">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero-card">
+  <h1>Fale com a gente</h1>
+  <p>Tire dúvidas, peça um orçamento ou mande sua mensagem. Respondemos o mais rápido possível.</p>
+</div>
+
+<section>
+  <h2>Entre em contato</h2>
+  <p>Escolha o canal que for mais prático pra você.</p>
+
+  <div class="contato-opcoes">
+    <a class="contato-card" href="#">
+      <span class="contato-icone">💬</span>
+      <span class="contato-info">
+        <strong>WhatsApp</strong>
+        <small>(11) 90000-0000</small>
+      </span>
+    </a>
+    <a class="contato-card" href="#">
+      <span class="contato-icone">📞</span>
+      <span class="contato-info">
+        <strong>Telefone</strong>
+        <small>(11) 2436-8598</small>
+      </span>
+    </a>
+
+    <a class="contato-card" href="#">
+      <span class="contato-icone">✉️</span>
+      <span class="contato-info">
+        <strong>E-mail</strong>
+        <small>vidracariaboanova@terra.com.br</small>
+      </span>
+    </a>
+  </div>
+
+  <h3>Envie uma mensagem</h3>
+
+  <form class="formulario" onsubmit="return false;">
+    <div class="campo">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+    </div>
+
+    <div class="campo">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+    </div>
+
+    <div class="campo">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Conte o que você precisa..." required></textarea>
+    </div>
+
+    <button type="submit">Enviar mensagem</button>
+  </form>
+</section>
+</body>
+</html>
