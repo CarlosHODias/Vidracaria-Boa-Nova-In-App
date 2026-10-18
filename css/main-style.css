@@ -187,7 +187,6 @@ nav a:focus-visible::after {
 
 /* ===== Seções ===== */
 section {
-  max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
