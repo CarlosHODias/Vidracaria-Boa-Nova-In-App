@@ -5,6 +5,7 @@
   --azul-700: #1f4a75; /* hover, cabeçalho escuro */
   --azul-600: #2b5c8a; /* azul da logo: cor principal */
   --azul-400: #5b8bb8; /* detalhes, ícones */
+  --azul-200: #95c6f5; /* hover azul claro */
   --azul-100: #e3edf6; /* fundos de cards e seções */
   --azul-50:  #f3f7fb; /* fundo alternado bem sutil */
 
@@ -141,7 +142,7 @@ nav a {
 
 nav a:hover,
 nav a:focus-visible {
-  color: var(--cor-primaria);
+  color: var(--azul-200);
 }
 
 nav a:hover::after,
@@ -151,6 +152,22 @@ nav a:focus-visible::after {
 
 .item-logo {
     margin-right: auto; 
+}
+
+#sobre-nos p {
+  color: var(--azul-900);
+  font-size: 1.1rem;
+  max-width: 850px;
+  line-height: 1.6;
+  margin-bottom: 45px;
+}
+
+#logo-home {
+  display: flex;
+  width: 250px;
+  height: 90px;
+  margin: 0;
+  margin-right: 50px;
 }
 
 #nossos-Servicos {
@@ -206,6 +223,11 @@ nav a:focus-visible::after {
   background: rgba(255, 255, 255, 0.12); 
   border-color: #ff1e27;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+#nossos-Servicos .lista-servicos a {
+  text-decoration: none;
+  color: var(--branco);
 }
 
 
@@ -329,9 +351,9 @@ section h3 {
 .formulario {
   display: grid;
   gap: 1.25rem;
-  max-width: 640px;
+  max-width: 990px;
   padding: 2rem;
-  background: var(--branco);
+  background: var(--azul-50);
   border: 1px solid var(--cor-borda);
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(26, 98, 220, 0.08);
@@ -353,7 +375,7 @@ section h3 {
   font: inherit;
   padding: 0.75rem 1rem;
   color: var(--cor-texto);
-  background: var(--fundo-alt);
+  background: var(--branco);
   border: 1px solid var(--cor-borda);
   border-radius: 10px;
 }
@@ -477,15 +499,31 @@ section h3 {
   gap: 20px;
 }
 .fotos-servicos img {
-  border-radius: 8px;
-  height: 40vw;
+  border-radius: 28px;
+  height: 20vw;
   width: 40%;
   object-fit: cover;
   object-position: center;
+  margin: auto;
 }
 
-.texto-sobre {
-  max-width: 800px;
-  margin: 0 auto;
+
+
+footer {
+  background: var(--azul-900);
+  color: var(--branco);
+  padding: 4rem 1.5rem;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: var(--texto-sm);
+}
+
+.logo-sobre-nos {
+  display: block;
+  margin: 0 auto;
+  height: 20%;
+  width: auto;
 }
