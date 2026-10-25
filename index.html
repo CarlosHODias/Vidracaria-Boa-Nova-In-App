@@ -8,36 +8,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
     <nav>
         <ul style="list-style-type:none;">
-            <li><img src="images/logo-vidracaria-boa-nova.webp" alt="Logotipo da Vidraçaria Boa Nova" width="100" height="50"></li>
+            <li><a id="logo-home" href="index.html"><img src="images/logo-vidracaria-boa-nova.webp" alt="Logotipo da Vidraçaria Boa Nova" width="100" height="50"></a></li>
             <li><a href="index.html" class="link-paginas">Página Inicial</a></li>
-            <li><a href="html/sobre.html" class="link-paginas">Sobre</a></li>
-            <li><a href="html/servicos.html" class="link-paginas">Serviços</a></li>
             <li><a href="html/contato.html" class="link-paginas">Contato</a></li>
+            <li><a href="html/servicos.html" class="link-paginas">Serviços</a></li>
+            <li><a href="html/sobre.html" class="link-paginas">Sobre</a></li>
         </ul>
     </nav>
 
     <main>
+        <div class="carousel-container">
+                    <!-- Slides Wrapper -->
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                        <li class="carousel-slide active">
+                            <img src="images/carrossel/carrossel-01.jpeg" alt="Slide 1">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/carrossel/carrossel-02.jpeg" alt="Slide 2">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/carrossel/carrossel-03.jpeg" alt="Slide 3">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/carrossel/carrossel-04.jpeg" alt="Slide 4">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/carrossel/carrossel-05.jpeg" alt="Slide 5">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/carrossel/carrossel-06.jpeg" alt="Slide 6">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/carrossel/carrossel-07.jpeg" alt="Slide 7">
+                        </li>
+                        </ul>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-btn btn-left" aria-label="Previous Slide">←</button>
+                    <button class="carousel-btn btn-right" aria-label="Next Slide">→</button>
+
+                    <!-- Navigation Indicators (Dots) -->
+                    <div class="carousel-nav">
+                        <button class="indicator active"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                    </div>
+                </div>
         <section>
             <div class="hero-card">
                 <h1 class="titulo-principal">Vidraçaria Boa Nova</h1>
                 <p>Box, espelhos, janelas e muito mais, sob medida pra você.</p>
-                <div class="botao"><a href="html/servicos.html" class="botao">Solicite um orçamento</a></div>
+
+                
+
+                <div class="botao"><a href="html/contato.html" class="botao">Monte Seu Pedido</a></div>
+                
             </div>
         </section>
-        <section>
+        <section id="nossos-Servicos">
             <h2>Nossos Serviços</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam doloribus magni exercitationem dignissimos id iure ipsa, consectetur ipsum velit eos sit deleniti sequi quisquam. Esse delectus error facere quis impedit!</p>
             <ul class="lista-servicos">
-                <li>Tipo Serviço 1</li>
-                <li>Tipo Serviço 2</li>
-                <li>Tipo Serviço 3</li>
-                <li>Tipo Serviço 4</li>
+                <li>Boxes</li>
+                <li>Janelas</li>
+                <li>Vitrines</li>
+                <li>Espelhos</li>
             </ul>
         </section>
     </main>
+
+
+
+    <script src="js/carrossel.js"></script>
 </body>
 </html>
