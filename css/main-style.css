@@ -521,6 +521,19 @@ footer p {
   font-size: var(--texto-sm);
 }
 
+.footer-wrapper {
+  width: 60%;
+  margin: auto;
+}
+
+.footer-wrapper a {
+  color: var(--branco);
+  text-decoration: none;
+}
+.footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
 .logo-sobre-nos {
   display: block;
   margin: 0 auto;
