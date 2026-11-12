@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu Pedido</title>
+
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navegacao">
+        <nav>
+            <ul style="list-style-type:none;">
+                <li><a id="logo-home" href="index.html"><img src="../images/logo-vidracaria-boa-nova.webp" alt="Logotipo da Vidraçaria Boa Nova" width="100" height="50"></a></li>
+                <li><a href="../index.html" class="link-paginas">Página Inicial</a></li>
+                <li><a href="contato.html" class="link-paginas">Contato</a></li>
+                <li><a href="servicos.html" class="link-paginas">Serviços</a></li>
+                <li><a href="../index.html#sobre-nos" class="link-paginas">Sobre</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hero-card">
+      <h1>Monte seu Pedido</h1>
+      <p>Sabe o que quer? CPreencha os detalhes abaixo e envie fotos de referência para um orçamento sob medida.</p>
+    </div>
+
+    <form class="formulario" action="#" method="POST" enctype="multipart/form-data" class="form-pedido">
+      
+      <fieldset class="grupo-campos">
+        <legend>Seus Dados</legend>
+        
+        <div class="campo">
+          <label for="nome">Nome Completo *</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex: Carlos Hodias" required>
+        </div>
+
+        <div class="campo-duplo">
+          <div class="campo">
+            <label for="telefone">WhatsApp / Telefone *</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 2. Especificações do Vidro -->
+      <fieldset class="grupo-campos">
+        <legend>Detalhes do Projeto</legend>
+
+        <div class="campo">
+          <label for="servico">Tipo de Serviço *</label>
+          <select id="servico" name="servico" required>
+            <option value="" disabled selected>Selecione o que você precisa...</option>
+            <option value="box">Box para Banheiro</option>
+            <option value="espelho">Espelho sob medida</option>
+            <option value="janela">Janela de Vidro</option>
+            <option value="corrimao">Corrimão / Guarda-corpo</option>
+            <option value="parede">Parede / Divisória de Vidro</option>
+            <option value="teto">Teto / Cobertura de Vidro</option>
+            <option value="vitrine">Vitrine</option>
+            <option value="outro">Outro projeto</option>
+          </select>
+        </div>
+
+        <div class="campo-duplo">
+          <div class="campo">
+            <label for="medidas">Medidas Aproximadas (Largura x Altura)</label>
+            <input type="text" id="medidas" name="medidas" placeholder="Ex: 1,50m x 1,90m">
+        </div>
+
+          <div class="campo">
+            <label for="tipo-vidro">Preferência de Vidro / Cor</label>
+            <select id="tipo-vidro" name="tipo_vidro">
+            <option value="nao-sei" selected>Não sei / Preciso de ajuda</option>
+            <option value="incolor">Incolor (Transparente)</option>
+            <option value="fume">Fumê</option>
+            <option value="verde">Verde</option>
+            <option value="martelado">Martelado</option>
+            <option value="Pontilhado">Pontilhado</option>
+            <option value="Canelado">Canelado</option>
+            <option value="Laminado">Laminado</option>
+            <option value="Aramado">Aramado</option>
+            <option value="Temperado">Temperado</option>
+            <option value="Formatos-Variados">Espelhos de Formatos Variados</option>
+            <option value="Acrílico">Acrílico</option>
+            <option value="espelhado">Espelhado / Bronze</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="descricao">Observações e Detalhes *</label>
+          <textarea id="descricao" name="descricao" rows="4" placeholder="Conte-nos mais sobre o espaço, tipo de abertura, acabamento desejado..." required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo-campos">
+        <legend>Fotos do Local ou Referências</legend>
+        
+        <div class="campo-upload">
+          <label for="imagens">Anexar Imagens (Opcional)</label>
+          <p class="dica-upload">Envie fotos do espaço onde o vidro será instalado ou modelos de inspiração (JPG, PNG).</p>
+          <br>
+          <input id="input-imagens" type="file" name="imagens[]" accept="image/png, image/jpeg, image/webp" multiple>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn-enviar">Solicitar Orçamento</button>
+
+    </form>
+  </div>
+</section>
+</body>
